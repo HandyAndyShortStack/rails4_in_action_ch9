@@ -7,7 +7,9 @@ gem 'cancan', '1.6.7'
 
 gem 'paperclip', '2.7.0'
 
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -20,6 +22,7 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.9'
+  gem 'sqlite3'
 end
 
 group :test do
