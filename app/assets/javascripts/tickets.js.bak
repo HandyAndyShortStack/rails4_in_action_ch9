@@ -1,0 +1,12 @@
+(function(){$(function(){
+/////////////////////////
+
+$('a#add_another_file').click(function() {
+  var url = 'files/new?number=' + $('#files input').length;
+  $.get(url, function(data){
+    $('#files').append(data);
+  });
+});
+
+////////
+});})();

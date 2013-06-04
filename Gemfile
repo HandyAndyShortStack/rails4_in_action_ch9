@@ -30,3 +30,5 @@ group :test do
 end
 
 gem 'pry-rails'
+
+gem 'database_cleaner', '0.7.2'
