@@ -45,7 +45,7 @@ feature "Creating Tickets" do
     fill_in "Description", with: "The blink tag has a speed attribute"
     attach_file "File #1", File.join( Rails.root, "spec/fixtures/speed.txt")
     click_link "Add Another File"
-    attach_file "File #1", File.join( Rails.root, "spec/fixtures/spin.txt")
+    attach_file "File #2", File.join( Rails.root, "spec/fixtures/spin.txt")
     click_button "Create Ticket"
     page.should have_content("Ticket has been created")
     within("#ticket") do
